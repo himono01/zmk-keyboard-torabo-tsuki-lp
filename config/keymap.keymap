@@ -20,11 +20,11 @@
 
         default {
             bindings = <
-&none  &none                      &none     &none     &none      &none                                           &none         &none  &none      &none                       &none                    &none
-&none  &mt TAB Q                  &kp W     &kp E     &kp R      &kp T                                           &kp Y         &kp U  &kp I      &kp O                       &kp P                    &none
-&none  &mt LCTRL A                &kp S     &kp D     &kp F      &kp G        &trans                &trans       &kp H         &kp J  &kp K      &kp L                       &lt 1 SEMICOLON          &none
-&none  &mt LSHIFT Z               &kp X     &kp C     &kp V      &kp A        &lt 3 CAPSLOCK        &kp DELETE   &kp N         &kp M  &kp COMMA  &kp DOT                     &mt RIGHT_SHIFT FSLH     &none
-&none  &mt LANGUAGE_4 LANGUAGE_6  &kp LGUI  &kp LALT  &lt 2 TAB  &lt 1 SPACE  &mt LEFT_SHIFT LANG4  &lt 3 ENTER  &lt 2 ESCAPE  &none  &none      &mt RIGHT_ALT LEFT_BRACKET  &mt RCTRL RIGHT_BRACKET  &none
+&none  &none                      &none     &none     &none      &none                                             &none         &none  &none      &none                       &none                    &none
+&none  &mt TAB Q                  &kp W     &kp E     &kp R      &kp T                                             &kp Y         &kp U  &kp I      &kp O                       &kp P                    &none
+&none  &mt LCTRL A                &kp S     &kp D     &kp F      &kp G        &trans                &trans         &kp H         &kp J  &kp K      &kp L                       &lt 1 SEMICOLON          &none
+&none  &mt LSHIFT Z               &kp X     &kp C     &kp V      &kp B        &lt 3 CAPSLOCK        &kp BACKSPACE  &kp N         &kp M  &kp COMMA  &kp DOT                     &mt RIGHT_SHIFT FSLH     &none
+&none  &mt LANGUAGE_4 LANGUAGE_6  &kp LGUI  &kp LALT  &lt 2 TAB  &lt 1 SPACE  &mt LEFT_SHIFT LANG4  &lt 3 ENTER    &lt 2 ESCAPE  &none  &none      &mt RIGHT_ALT LEFT_BRACKET  &mt RCTRL RIGHT_BRACKET  &none
             >;
         };
 
