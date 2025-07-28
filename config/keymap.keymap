@@ -33,7 +33,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans           &trans            &trans             &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp RC(PAGE_UP)  &msc MOVE_X(20)   &kp RC(PAGE_DOWN)  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK        &msc MOVE_X(-20)  &mkp RCLK          &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RA(LEFT)     &mkp MCLK         &kp RA(RIGHT)      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F5  &kp RA(LEFT)     &mkp MCLK         &kp RA(RIGHT)      &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans            &trans             &trans  &trans
             >;
         };
