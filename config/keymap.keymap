@@ -18,7 +18,7 @@
 #define JP_COLON        SINGLE_QUOTE      // :
 #define JP_ASTERISK     DOUBLE_QUOTES     // *
 #define JP_BACKQUOTE    LEFT_BRACE        // `
-#define JP_UNDERSCORE   LS(0x87)          // _
+#define JP_UNDERSCORE   0x87              // _
 #define JP_LBRACKET     RIGHT_BRACKET     // [
 #define JP_RBRACKET     BACKSLASH         // ]
 #define JP_LPAREN       ASTERISK          // (
@@ -77,8 +77,8 @@
             bindings = <
 &none  &none             &none   &none   &none   &none                   &none             &none   &none   &none       &none              &none
 &none  &kp TAB           &trans  &trans  &trans  &trans                  &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9      &kp MINUS          &none
-&none  &kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp N4  &kp N5  &kp N6      &kp JP_PLUS        &none
-&none  &kp LSHIFT        &trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp N1  &kp N2  &kp N3      &kp PLUS           &none
+&none  &kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp N4  &kp N5  &kp N6      &kp PLUS           &none
+&none  &kp LSHIFT        &trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp N1  &kp N2  &kp N3      &kp JP_TILDE       &none
 &none  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &kp N0            &none   &none   &kp JP_YEN  &kp JP_UNDERSCORE  &none
             >;
         };
