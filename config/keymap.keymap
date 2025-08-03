@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -55,21 +56,21 @@
 
         default {
             bindings = <
-&none  &none             &none     &none     &none             &none                                       &none            &none  &none      &none         &none                          &none
-&none  &kp Q             &kp W     &kp E     &kp R             &kp T                                       &kp Y            &kp U  &kp I      &kp O         &kp P                          &none
-&none  &kp A             &kp S     &kp D     &kp F             &kp G        &none             &none        &kp H            &kp J  &kp K      &kp L         &mt RIGHT_CONTROL SEMICOLON    &none
-&none  &kp Z             &kp X     &kp C     &kp V             &kp B        &kp LEFT_SHIFT    &kp ESCAPE   &kp N            &kp M  &kp COMMA  &lt 1 PERIOD  &mt RIGHT_SHIFT JP_LBRACKET    &none
-&none  &kp LEFT_CONTROL  &kp LGUI  &kp LALT  &lt 3 JP_EISU     &lt 1 SPACE  &lt 2 JP_KANA     &lt 3 ENTER  &lt 2 BACKSPACE  &none  &none      &kp SLASH     &mt RCTRL JP_RBRACKET          &none
+&none  &none             &none     &none     &none          &none                                     &none            &none  &none      &none         &none                        &none
+&none  &kp Q             &kp W     &kp E     &kp R          &kp T                                     &kp Y            &kp U  &kp I      &kp O         &kp P                        &none
+&none  &kp A             &kp S     &kp D     &kp F          &kp G        &none           &none        &kp H            &kp J  &kp K      &kp L         &mt RIGHT_CONTROL SEMICOLON  &none
+&none  &kp Z             &kp X     &kp C     &kp V          &kp B        &kp LEFT_SHIFT  &kp ESCAPE   &kp N            &kp M  &kp COMMA  &lt 1 PERIOD  &mt RIGHT_SHIFT JP_LBRACKET  &none
+&none  &kp LEFT_CONTROL  &kp LGUI  &kp LALT  &lt 3 JP_EISU  &lt 1 SPACE  &lt 2 JP_KANA   &lt 3 ENTER  &lt 2 BACKSPACE  &none  &none      &kp SLASH     &mt RCTRL JP_RBRACKET        &none
             >;
         };
 
         mouse {
             bindings = <
-&none  &none             &none     &none     &none      &none                   &none      &none            &none             &none              &none   &none
-&none  &kp TAB           &trans    &kp UP    &trans     &trans                  &trans     &kp RC(PAGE_UP)  &msc MOVE_Y(20)   &kp RC(PAGE_DOWN)  &trans  &none
-&none  &kp LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &kp RC(W)  &mkp LCLK        &msc MOVE_Y(-20)  &mkp RCLK          &trans  &none
-&none  &kp LEFT_SHIFT    &trans    &trans    &trans     &trans  &trans  &trans  &trans     &kp RA(LEFT)     &mkp MCLK         &kp RA(RIGHT)      &trans  &none
-&none  &trans            &trans    &trans    &trans     &trans  &trans  &trans  &kp F5     &none            &none             &trans             &trans  &none
+&none  &none             &none     &none     &none      &none                   &none          &none            &none             &none              &none   &none
+&none  &kp TAB           &trans    &kp UP    &trans     &trans                  &kp RS(RC(T))  &kp RC(PAGE_UP)  &msc MOVE_Y(20)   &kp RC(PAGE_DOWN)  &trans  &none
+&none  &kp LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &kp RC(W)      &mkp LCLK        &msc MOVE_Y(-20)  &mkp RCLK          &trans  &none
+&none  &kp LEFT_SHIFT    &trans    &trans    &trans     &trans  &trans  &trans  &trans         &kp RA(LEFT)     &mkp MCLK         &kp RA(RIGHT)      &trans  &none
+&none  &trans            &trans    &trans    &trans     &trans  &trans  &trans  &kp F5         &none            &none             &trans             &trans  &none
             >;
         };
 
@@ -85,11 +86,11 @@
 
         option {
             bindings = <
-&none  &none    &none    &none         &none       &none                             &none       &none     &none          &none   &none   &none
-&none  &kp F1   &kp F2   &kp F3        &kp F4      &kp F5                            &kp PG_UP   &trans    &kp PAGE_DOWN  &trans  &trans  &none
-&none  &kp F6   &kp F7   &kp F8        &kp F9      &kp F10     &trans        &trans  &kp HOME    &kp UP    &kp END        &trans  &trans  &none
-&none  &kp F11  &kp F12  &out OUT_TOG  &bt BT_NXT  &bt BT_PRV  &trans        &trans  &kp LEFT    &kp DOWN  &kp RIGHT      &trans  &trans  &none
-&none  &trans   &trans   &trans        &trans      &trans      &bt BT_SEL 0  &trans  &kp DELETE  &none     &none          &trans  &trans  &none
+&none  &none       &none    &none         &none       &none                             &none       &none     &none          &none   &none   &none
+&none  &kp F1      &kp F2   &kp F3        &kp F4      &kp F5                            &kp PG_UP   &trans    &kp PAGE_DOWN  &trans  &trans  &none
+&none  &kp F6      &kp F7   &kp F8        &kp F9      &kp F10     &trans        &trans  &kp HOME    &kp UP    &kp END        &trans  &trans  &none
+&none  &kp F11     &kp F12  &out OUT_TOG  &bt BT_NXT  &bt BT_PRV  &trans        &trans  &kp LEFT    &kp DOWN  &kp RIGHT      &trans  &trans  &none
+&none  &bt BT_CLR  &trans   &trans        &trans      &trans      &bt BT_SEL 0  &trans  &kp DELETE  &none     &none          &trans  &trans  &none
             >;
         };
     };
