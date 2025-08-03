@@ -65,11 +65,11 @@
 
         mouse {
             bindings = <
-&none  &none   &none   &none   &none   &none                   &none      &none            &none             &none              &none   &none
-&none  &trans  &trans  &trans  &trans  &trans                  &trans     &kp RC(PAGE_UP)  &msc MOVE_Y(20)   &kp RC(PAGE_DOWN)  &trans  &none
-&none  &tarns  &trans  &trans  &trans  &trans  &trans  &trans  &kp RC(W)  &mkp LCLK        &msc MOVE_Y(-20)  &mkp RCLK          &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp RA(LEFT)     &mkp MCLK         &kp RA(RIGHT)      &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F5     &none            &none             &trans             &trans  &none
+&none  &none             &none     &none     &none      &none                   &none      &none            &none             &none              &none   &none
+&none  &kp TAB           &trans    &kp UP    &trans     &trans                  &trans     &kp RC(PAGE_UP)  &msc MOVE_Y(20)   &kp RC(PAGE_DOWN)  &trans  &none
+&none  &kp LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &kp RC(W)  &mkp LCLK        &msc MOVE_Y(-20)  &mkp RCLK          &trans  &none
+&none  &kp LEFT_SHIFT    &trans    &trans    &trans     &trans  &trans  &trans  &trans     &kp RA(LEFT)     &mkp MCLK         &kp RA(RIGHT)      &trans  &none
+&none  &trans            &trans    &trans    &trans     &trans  &trans  &trans  &kp F5     &none            &none             &trans             &trans  &none
             >;
         };
 
