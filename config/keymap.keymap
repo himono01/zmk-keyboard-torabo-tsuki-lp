@@ -78,8 +78,8 @@
             bindings = <
 &none  &none   &none   &none   &none   &none                   &none             &none   &none   &none       &none              &none
 &none  &trans  &trans  &trans  &trans  &trans                  &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9      &kp MINUS          &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp N4  &kp N5  &kp N6      &kp JP_TILDE       &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp N1  &kp N2  &kp N3      &kp PLUS           &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp N4  &kp N5  &kp N6      &kp JP_COLON       &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp N1  &kp N2  &kp N3      &kp JP_TILDE       &none
 &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N0            &none   &none   &kp JP_YEN  &kp JP_UNDERSCORE  &none
             >;
         };
