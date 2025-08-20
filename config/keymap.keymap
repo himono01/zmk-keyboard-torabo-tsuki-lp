@@ -90,7 +90,7 @@
 &none  &kp F1      &kp F2   &kp F3        &kp F4      &kp F5                            &kp PG_UP   &trans    &kp PAGE_DOWN  &trans      &bt BT_CLR  &none
 &none  &kp F6      &kp F7   &kp F8        &kp F9      &kp F10     &trans        &trans  &kp HOME    &kp UP    &kp END        &trans      &trans      &none
 &none  &kp F11     &kp F12  &out OUT_TOG  &bt BT_NXT  &bt BT_PRV  &trans        &trans  &kp LEFT    &kp DOWN  &kp RIGHT      &trans      &trans      &none
-&none  &trans      &trans   &trans        &trans      &trans      &bt BT_SEL 0  &trans  &kp DELETE  &none     &none          &bt BT_PRV  &bt BT_NXT  &none
+&none  &trans      &trans   &trans        &trans      &trans      &bt BT_SEL 0  &trans  &kp DELETE  &none     &none          &bt BT_NXT  &bt BT_PRV  &none
             >;
         };
     };
