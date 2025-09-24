@@ -58,28 +58,28 @@
             bindings = <
 &none  &none             &none     &none     &none           &none                                        &none            &none  &none      &none         &none                        &none
 &none  &kp Q             &kp W     &kp E     &kp R           &kp T                                        &kp Y            &kp U  &kp I      &kp O         &kp P                        &none
-&none  &kp A             &kp S     &kp D     &kp F           &kp G        &none              &none        &kp H            &kp J  &kp K      &kp L         &mt RIGHT_CONTROL SEMICOLON  &none
-&none  &kp Z             &kp X     &kp C     &kp V           &kp B        &lt 3 PRINTSCREEN  &kp ESCAPE   &kp N            &kp M  &kp COMMA  &lt 1 PERIOD  &mt RIGHT_SHIFT JP_LBRACKET  &none
+&none  &mt RIGHT_CONTROL A             &kp S     &kp D     &kp F           &kp G        &none              &none        &kp H            &kp J  &kp K      &kp L         &mt RIGHT_CONTROL SEMICOLON  &none
+&none  &mt RIGHT_SHIFT Z             &kp X     &kp C     &kp V           &kp B        &lt 3 PRINTSCREEN  &kp ESCAPE   &kp N            &kp M  &kp COMMA  &lt 1 PERIOD  &mt RIGHT_SHIFT JP_LBRACKET  &none
 &none  &kp LEFT_CONTROL  &kp LGUI  &kp LALT  &kp LEFT_SHIFT  &lt 1 SPACE  &lt 2 JP_HANZEN    &lt 3 ENTER  &lt 2 BACKSPACE  &none  &none      &kp SLASH     &mt RCTRL JP_RBRACKET        &none
             >;
         };
 
         mouse {
             bindings = <
-&none  &none             &none     &none     &none      &none                   &none          &none            &none             &none              &none   &none
-&none  &kp TAB           &trans    &kp UP    &trans     &trans                  &kp RS(RC(T))  &kp RC(PAGE_UP)  &msc MOVE_Y(20)   &kp RC(PAGE_DOWN)  &trans  &none
-&none  &kp LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &kp RC(W)      &mkp LCLK        &msc MOVE_Y(-20)  &mkp RCLK          &trans  &none
-&none  &kp LEFT_SHIFT    &trans    &trans    &trans     &trans  &trans  &trans  &trans         &kp RA(LEFT)     &mkp MCLK         &kp RA(RIGHT)      &trans  &none
-&none  &trans            &trans    &trans    &trans     &trans  &trans  &trans  &kp F5         &none            &none             &trans             &trans  &none
+&none  &none             &none     &none     &none      &none                       &none          &none            &none             &none              &none   &none
+&none  &kp TAB           &trans    &kp UP    &trans     &trans                      &kp RS(RC(T))  &kp RC(PAGE_UP)  &msc MOVE_Y(20)   &kp RC(PAGE_DOWN)  &trans  &none
+&none  &kp LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &none       &none   &kp RC(W)      &mkp LCLK        &msc MOVE_Y(-20)  &mkp RCLK          &trans  &none
+&none  &kp LEFT_SHIFT    &trans    &trans    &trans     &trans  &kp LA(F4)  &trans  &trans         &kp RA(LEFT)     &mkp MCLK         &kp RA(RIGHT)      &trans  &none
+&none  &trans            &trans    &trans    &trans     &trans  &trans      &trans  &kp F5         &none            &none             &trans             &trans  &none
             >;
         };
 
         numpad {
             bindings = <
 &none  &none             &none   &none   &none   &none                   &none             &none   &none   &none       &none              &none
-&none  &trans            &trans  &trans  &trans  &trans                  &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9      &kp MINUS          &none
-&none  &kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp N4  &kp N5  &kp N6      &kp JP_COLON       &none
-&none  &kp LEFT_SHIFT    &trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp N1  &kp N2  &kp N3      &kp JP_TILDE       &none
+&none  &kp LA(TAB)       &trans  &trans  &trans  &trans                  &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9      &kp MINUS          &none
+&none  &kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &none   &none   &trans            &kp N4  &kp N5  &kp N6      &kp JP_COLON       &none
+&none  &kp LEFT_SHIFT    &trans  &trans  &trans  &trans  &trans  &trans  &kp N0            &kp N1  &kp N2  &kp N3      &kp JP_TILDE       &none
 &none  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &kp N0            &none   &none   &kp JP_YEN  &kp JP_UNDERSCORE  &none
             >;
         };
@@ -87,9 +87,9 @@
         option {
             bindings = <
 &none  &none       &none    &none         &none       &none                             &none       &none     &none          &none       &none       &none
-&none  &kp F1      &kp F2   &kp F3        &kp F4      &kp F5                            &kp PG_UP   &trans    &kp PAGE_DOWN  &trans      &bt BT_CLR  &none
-&none  &kp F6      &kp F7   &kp F8        &kp F9      &kp F10     &trans        &trans  &kp HOME    &kp UP    &kp END        &trans      &trans      &none
-&none  &kp F11     &kp F12  &out OUT_TOG  &bt BT_NXT  &bt BT_PRV  &trans        &trans  &kp LEFT    &kp DOWN  &kp RIGHT      &trans      &trans      &none
+&none  &kp F1      &kp F2   &kp F3        &kp F4      &kp F5                            &kp PG_UP   &trans    &kp PAGE_DOWN  &trans      &trans      &none
+&none  &kp F6      &kp F7   &kp F8        &kp F9      &kp F10     &none         &none   &kp HOME    &kp UP    &kp END        &trans      &trans      &none
+&none  &kp F11     &kp F12  &bt BT_CLR    &bt BT_NXT  &bt BT_PRV  &trans        &trans  &kp LEFT    &kp DOWN  &kp RIGHT      &trans      &trans      &none
 &none  &trans      &trans   &trans        &trans      &trans      &bt BT_SEL 0  &trans  &kp DELETE  &none     &none          &bt BT_NXT  &bt BT_PRV  &none
             >;
         };
