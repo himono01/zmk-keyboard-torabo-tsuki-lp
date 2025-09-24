@@ -56,11 +56,11 @@
 
         default {
             bindings = <
-&none  &none             &none     &none     &none           &none                                        &none            &none  &none      &none         &none                        &none
-&none  &kp Q             &kp W     &kp E     &kp R           &kp T                                        &kp Y            &kp U  &kp I      &kp O         &kp P                        &none
-&none  &kp A             &kp S     &kp D     &kp F           &kp G        &none              &none        &kp H            &kp J  &kp K      &kp L         &mt RIGHT_CONTROL SEMICOLON  &none
+&none  &none             &none     &none     &none           &none                                             &none            &none  &none      &none         &none                        &none
+&none  &kp Q             &kp W     &kp E     &kp R           &kp T                                             &kp Y            &kp U  &kp I      &kp O         &kp P                        &none
+&none  &kp A             &kp S     &kp D     &kp F           &kp G        &none              &none             &kp H            &kp J  &kp K      &kp L         &mt RIGHT_CONTROL SEMICOLON  &none
 &none  &kp Z             &kp X     &kp C     &kp V           &kp B        &lt 3 PRINTSCREEN  &mt RALT ESCAPE   &kp N            &kp M  &kp COMMA  &lt 1 PERIOD  &mt RIGHT_SHIFT JP_LBRACKET  &none
-&none  &kp LEFT_CONTROL  &kp LGUI  &kp LALT  &kp LEFT_SHIFT  &lt 1 SPACE  &lt 2 JP_HANZEN    &lt 3 ENTER  &lt 2 BACKSPACE  &none  &none      &kp SLASH     &mt RCTRL JP_RBRACKET        &none
+&none  &kp LEFT_CONTROL  &kp LGUI  &kp LALT  &kp LEFT_SHIFT  &lt 1 SPACE  &lt 2 JP_HANZEN    &lt 3 ENTER       &lt 2 BACKSPACE  &none  &none      &kp SLASH     &mt RCTRL JP_RBRACKET        &none
             >;
         };
 
@@ -77,7 +77,7 @@
         numpad {
             bindings = <
 &none  &none             &none   &none   &none   &none                   &none             &none   &none   &none       &none              &none
-&none  &kp LA(TAB)       &trans  &trans  &trans  &trans                  &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9      &kp MINUS          &none
+&none  &kp TAB           &trans  &trans  &trans  &trans                  &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9      &kp MINUS          &none
 &none  &kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &none   &none   &trans            &kp N4  &kp N5  &kp N6      &kp JP_COLON       &none
 &none  &kp LEFT_SHIFT    &trans  &trans  &trans  &trans  &trans  &trans  &kp N0            &kp N1  &kp N2  &kp N3      &kp JP_TILDE       &none
 &none  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &kp N0            &none   &none   &kp JP_YEN  &kp JP_UNDERSCORE  &none
