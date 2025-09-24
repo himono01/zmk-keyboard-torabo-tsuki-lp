@@ -21,6 +21,6 @@ config PAW3222
 
 config ZMK_BEHAVIOR_HOLD_TAP_MS
     int
-    default 150
+    default 130
 
 endif
