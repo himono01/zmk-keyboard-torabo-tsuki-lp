@@ -56,18 +56,18 @@
 
         default {
             bindings = <
-&none  &none             &none     &none     &none                      &none                                                  &none            &none  &none      &none         &none                        &none
-&none  &kp Q             &kp W     &kp E     &kp R                      &kp T                                                  &kp Y            &kp U  &kp I      &kp O         &kp P                        &none
-&none  &kp A             &kp S     &kp D     &kp F                      &kp G        &none                   &none             &kp H            &kp J  &kp K      &kp L         &mt RIGHT_CONTROL SEMICOLON  &none
-&none  &kp Z             &kp X     &kp C     &kp V                      &kp B        &lt 3 LA(PRINTSCREEN)   &mt RALT ESCAPE   &kp N            &kp M  &kp COMMA  &lt 1 PERIOD  &mt RIGHT_SHIFT JP_LBRACKET  &none
-&none  &kp LEFT_CONTROL  &kp LGUI  &kp LALT  &mt LEFT_SHIFT LANGUAGE_2  &lt 1 SPACE  &lt 2 LANGUAGE_1        &lt 3 ENTER       &lt 2 BACKSPACE  &none  &none      &kp SLASH     &mt RCTRL JP_RBRACKET        &none
+&none  &none             &none     &none     &none           &none                                             &none            &none  &none      &none         &none                        &none
+&none  &kp Q             &kp W     &kp E     &kp R           &kp T                                             &kp Y            &kp U  &kp I      &kp O         &kp P                        &none
+&none  &kp A             &kp S     &kp D     &kp F           &kp G        &none              &none             &kp H            &kp J  &kp K      &kp L         &mt RIGHT_CONTROL SEMICOLON  &none
+&none  &kp Z             &kp X     &kp C     &kp V           &kp B        &lt 3 PRINTSCREEN  &mt RALT ESCAPE   &kp N            &kp M  &kp COMMA  &lt 1 PERIOD  &mt RIGHT_SHIFT JP_LBRACKET  &none
+&none  &kp LEFT_CONTROL  &kp LGUI  &kp LALT  &kp LEFT_SHIFT  &lt 1 SPACE  &lt 2 JP_HANZEN    &lt 3 ENTER       &lt 2 BACKSPACE  &none  &none      &kp SLASH     &mt RCTRL JP_RBRACKET        &none
             >;
         };
 
         mouse {
             bindings = <
 &none  &none             &none     &none     &none      &none                       &none          &none            &none             &none              &none   &none
-&none  &kp TAB           &trans    &kp UP    &trans     &trans                      &sk(RIGHT_SHIFT RIGHT_CONTROL T)  &kp RC(PAGE_UP)  &msc MOVE_Y(20)   &kp RC(PAGE_DOWN)  &trans  &none
+&none  &kp TAB           &trans    &kp UP    &trans     &trans                      &kp RS(RC(T))  &kp RC(PAGE_UP)  &msc MOVE_Y(20)   &kp RC(PAGE_DOWN)  &trans  &none
 &none  &kp LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &none       &none   &kp RC(W)      &mkp LCLK        &msc MOVE_Y(-20)  &mkp RCLK          &trans  &none
 &none  &kp LEFT_SHIFT    &trans    &trans    &trans     &trans  &kp LA(F4)  &trans  &trans         &kp RA(LEFT)     &mkp MCLK         &kp RA(RIGHT)      &trans  &none
 &none  &trans            &trans    &trans    &trans     &trans  &trans      &trans  &kp F5         &none            &none             &trans             &trans  &none
