@@ -49,12 +49,6 @@
 
             label = "WINDOWCLOSE";
         };
-        ctrl_rs_rc_t: ctrl_rs_rc_t {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk RIGHT_SHIFT &sk RCTRL &kp T>, <&macro_press>;
-            label = "RS_RCTRL_T";
-        };
     };
 
     keymap {
@@ -62,20 +56,20 @@
 
         default {
             bindings = <
-&none  &none             &none     &none     &none                      &none                                                  &none            &none  &none      &none         &none                        &none
-&none  &kp Q             &kp W     &kp E     &kp R                      &kp T                                                  &kp Y            &kp U  &kp I      &kp O         &kp P                        &none
-&none  &kp A             &kp S     &kp D     &kp F                      &kp G        &none                   &none             &kp H            &kp J  &kp K      &kp L         &mt RCTRL SEMICOLON  &none
-&none  &kp Z             &kp X     &kp C     &kp V                      &kp B        &lt 3 LA(PRINTSCREEN)   &mt RALT ESCAPE   &kp N            &kp M  &kp COMMA  &lt 1 PERIOD  &mt RIGHT_SHIFT JP_LBRACKET  &none
-&none  &kp LCTRL  &kp LGUI  &kp LALT  &mt LEFT_SHIFT LANGUAGE_2  &lt 1 SPACE  &lt 2 LANGUAGE_1        &lt 3 ENTER       &lt 2 BACKSPACE  &none  &none      &kp SLASH     &mt RCTRL JP_RBRACKET        &none
+&none  &none             &none     &none     &none           &none                                             &none            &none  &none      &none         &none                        &none
+&none  &kp Q             &kp W     &kp E     &kp R           &kp T                                             &kp Y            &kp U  &kp I      &kp O         &kp P                        &none
+&none  &kp A             &kp S     &kp D     &kp F           &kp G        &none              &none             &kp H            &kp J  &kp K      &kp L         &mt RIGHT_CONTROL SEMICOLON  &none
+&none  &kp Z             &kp X     &kp C     &kp V           &kp B        &lt 3 PRINTSCREEN  &mt RALT ESCAPE   &kp N            &kp M  &kp COMMA  &lt 1 PERIOD  &mt RIGHT_SHIFT JP_LBRACKET  &none
+&none  &kp LEFT_CONTROL  &kp LGUI  &kp LALT  &kp LEFT_SHIFT  &lt 1 SPACE  &lt 2 JP_HANZEN    &lt 3 ENTER       &lt 2 BACKSPACE  &none  &none      &kp SLASH     &mt RCTRL JP_RBRACKET        &none
             >;
         };
 
         mouse {
             bindings = <
 &none  &none             &none     &none     &none      &none                       &none          &none            &none             &none              &none   &none
-&none  &none             &none     &none     &none      &none                       &none          &none            &none             &none              &none   &none
-&none  &kp TAB           &trans    &kp UP    &trans     &trans                      &ctrl_rs_rc_t  &sk(RCTRL PAGE_UP)  &msc MOVE_Y(20)   &sk(RCTRL PAGE_DOWN)  &trans  &none
-&none  &kp LCTRL         &kp LEFT  &kp DOWN  &kp RIGHT &trans     &none       &none   &sk(RCTRL W)      &mkp LCLK        &msc MOVE_Y(-20)  &mkp RCLK          &trans  &none
+&none  &kp TAB           &trans    &kp UP    &trans     &trans                      &kp RS(RC(T))  &kp RC(PAGE_UP)  &msc MOVE_Y(20)   &kp RC(PAGE_DOWN)  &trans  &none
+&none  &kp LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &none       &none   &kp RC(W)      &mkp LCLK        &msc MOVE_Y(-20)  &mkp RCLK          &trans  &none
+&none  &kp LEFT_SHIFT    &trans    &trans    &trans     &trans  &kp LA(F4)  &trans  &trans         &kp RA(LEFT)     &mkp MCLK         &kp RA(RIGHT)      &trans  &none
 &none  &trans            &trans    &trans    &trans     &trans  &trans      &trans  &kp F5         &none            &none             &trans             &trans  &none
             >;
         };
@@ -84,7 +78,7 @@
             bindings = <
 &none  &none             &none   &none   &none   &none                   &none             &none   &none   &none       &none              &none
 &none  &kp TAB           &trans  &trans  &trans  &trans                  &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9      &kp MINUS          &none
-&none  &kp LCTRL  &trans  &trans  &trans  &trans  &none   &none   &trans            &kp N4  &kp N5  &kp N6      &kp JP_COLON       &none
+&none  &kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &none   &none   &trans            &kp N4  &kp N5  &kp N6      &kp JP_COLON       &none
 &none  &kp LEFT_SHIFT    &trans  &trans  &trans  &trans  &trans  &trans  &kp N0            &kp N1  &kp N2  &kp N3      &kp JP_TILDE       &none
 &none  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &kp N0            &none   &none   &kp JP_YEN  &kp JP_UNDERSCORE  &none
             >;
