@@ -100,7 +100,7 @@
 &none  &kp TAB           &kp Q     &kp W     &kp E                      &kp R                                              &kp T            &kp Y      &msc MOVE_Y(20)    &kp I         &kp O                   &none
 &none  &kp LEFT_CONTROL  &kp A     &kp S     &kp D                      &kp F        &none               &none             &kp G            &mkp LCLK  &msc MOVE_Y(-20)   &mkp RCLK     &kp RIGHT_CONTROL       &none
 &none  &kp LEFT_SHIFT    &kp Z     &kp X     &kp C                      &kp V        &mo 2               &mt RALT ESCAPE   &kp B            &kp N      &mkp MCLK          &kp M         &kp RIGHT_SHIFT         &none
-&none  &to 0             &kp LGUI  &kp LALT  &msc MOVE_Y(20)            &kp SPACE    &msc MOVE_Y(-20)    &lt 3 ENTER       &lt 2 BACKSPACE  &none      &none              &kp SLASH     &mt RCTRL JP_RBRACKET   &none
+&none  &to 0             &kp LGUI  &kp LALT  &msc LEFT_CONTROL          &kp SPACE    &msc LEFT_SHIFT     &lt 3 ENTER       &lt 2 BACKSPACE  &none      &none              &kp SLASH     &mt RCTRL JP_RBRACKET   &none
             >;
         };
     };
